@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuasarX | Registration Form</title>
+    <link rel="shortcut icon" href="favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="form-area">
+        <h1>QuasarX Registration <span class="for-style">Form</span></h1>
+        <p class="header">Please book your registration by filling the form below, specify the expected 
+        details wisely for joining us.
+        </p>
+        <hr>
+        <form method="post" action=""  id="form" name="registration-form"> 
+            <label id="name" class="input-des">Name *</label>
+            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="last-name" id="last-name">
+            <label id="for-space"></label> 
+            <label for="first-name" class="under-input-name">First Name</label> 
+            <label for="last-name" class="under-input-name">Last Name</label>
+
+            <label id="email" class="input-des">E-mail *</label>
+            <input type="email" name="e-mail" id="E-mail" placeholder="ex: abc@example.com">
+            <label id="for-space"></label> 
+            <label for="E-mail" id="E-mail" class="under-input-name" >example@example.com</label>
+
+            <label id="phone-number" class="input-des">Phone Number *</label>
+            <input type="tel" name="phone" id="phone" placeholder="(000)000-0000-000" class="num">
+            <label for="" class="s"></label> <label for="" class="s"></label> <label for="" class="s"></label>
+
+            <!------------------------- courses -------------------------->
+            
+            <p id="my-courses">My Courses</p>
+            <label for=""></label> <label for=""></label> 
+
+            <div id="info-bar">
+                <i class="fa-solid fa-triangle-exclamation"></i><li>You haven't finished configuring this payment integration.<br>
+                Fill all the input-fields to configure your payment details and products.</li>
+            </div>
+
+            <div class="course1 courses">
+                <div class="s-1">
+                    <input type="checkbox" class="checkbox">
+                    <div class="s-2">
+                        <p class="topic">Basics and Front-End development</p> 
+                        <p class="price num">Rs. 600</p> 
+                    </div>
+                </div>
+                <p class="course-discription">Foundations of Basics and Front-End Development Topics</p>
+            </div>
+
+            <div class="course2 courses">
+                <div class="s-1">
+                    <input type="checkbox" class="checkbox">
+                    <div class="s-2">
+                        <p class="topic">Back-end Development</p> 
+                        <p class="price num">Rs. 700</p> 
+                    </div>
+                </div>
+                <p class="course-discription">Basic course that will help you build solid foundation of web-development.</p>
+            </div>
+
+            <div class="course3 courses">
+                <div class="s-1">
+                    <input type="checkbox" class="checkbox">
+                    <div class="s-2">
+                        <p class="topic">Full-stack Development</p> 
+                        <p class="price num">Rs. 1005</p> 
+                    </div>
+                </div>
+                <p class="course-discription">Basic course that will help you build solid foundation of web-development.</p>
+            </div>
+            <label for="" class="s"></label><label for="" class="s"></label>
+            <pre id="total" >Total              <span class="num">Rs. 0</span></pre>
+            <label for="" ></label><label for=""></label><label for=""   class="s"></label>
+
+            <!--------------------payment----------------------->
+
+            <p id="payment">Payment Options</p><label for=""   class="s"></label><label for=""></label>
+            <div class=" opt">
+                <input type="radio" name="X" id="radio-btn">
+                <img src="esewa.png" alt="" width="100px" height="47px"><span class="des"> ( Pay with ease )</span>
+            </div> <label></label><label></label>
+
+            <div class="submit-btn">
+                <input type="submit" value="Checkout" id="submit" >
+            </div>
+        </form>
+
+        <div class="esewa-qr" style="display: none;">
+            <img src="qr.jpg" height="200px" width="200px">
+            <div class="qr-msg-box">
+            <h4>Number : <span class="num">9814397231</span></h4>
+            <p>Note: <span class="p">Scan the QR For direct payment via eSewa and while paying, remember to use<br>
+            the same name and details that you used on form here. <br>
+            Complete your payment and click on done!</span>
+            </p>
+            </div>
+            <button id="done">Done</button>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+              <i class="fa-solid fa-circle-check"></i>
+              <p id="countdown">Form completed, redirecting in 3s</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="discription-area">
+    </div>
+</body>
+</html>
