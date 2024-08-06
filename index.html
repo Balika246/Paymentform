@@ -21,19 +21,19 @@
         <hr>
         <form method="post" action=""  id="form" name="registration-form"> 
             <label id="name" class="input-des">Name *</label>
-            <input type="text" name="first-name" id="first-name">
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" name="first-name" id="first-name" required>
+            <input type="text" name="last-name" id="last-name" required>
             <label id="for-space"></label> 
             <label for="first-name" class="under-input-name">First Name</label> 
             <label for="last-name" class="under-input-name">Last Name</label>
 
             <label id="email" class="input-des">E-mail *</label>
-            <input type="email" name="e-mail" id="E-mail" placeholder="ex: abc@example.com">
+            <input type="email" name="e-mail" id="E-mail" placeholder="ex: abc@example.com" required>
             <label id="for-space"></label> 
             <label for="E-mail" id="E-mail" class="under-input-name" >example@example.com</label>
 
             <label id="phone-number" class="input-des">Phone Number *</label>
-            <input type="tel" name="phone" id="phone" placeholder="(000)000-0000-000" class="num">
+            <input type="tel" name="phone" id="phone" placeholder="(000)000-0000-000" class="num" required>
             <label for="" class="s"></label> <label for="" class="s"></label> <label for="" class="s"></label>
 
             <!------------------------- courses -------------------------->
@@ -86,7 +86,7 @@
 
             <p id="payment">Payment Options</p><label for=""   class="s"></label><label for=""></label>
             <div class=" opt">
-                <input type="radio" name="X" id="radio-btn">
+                <input type="radio" name="X" id="radio-btn" required>
                 <img src="esewa.png" alt="" width="100px" height="47px"><span class="des"> ( Pay with ease )</span>
             </div> <label></label><label></label>
 
